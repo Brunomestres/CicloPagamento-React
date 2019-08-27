@@ -10,3 +10,5 @@ const port = 3003;
 server.listen(port, function(){
     console.log(`O servidor esta rodando na porta ${port}.`);
 });
+
+module.exports = server;

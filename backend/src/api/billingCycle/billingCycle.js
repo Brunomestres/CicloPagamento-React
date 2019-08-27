@@ -8,7 +8,7 @@ const creditSchema = new mongoose.Schema({
 
 const debtSchema = new mongoose.Schema({
     name: { type: String, reqired:true},
-    value: { type: Number, min: 0, required:true},
+    value: { type: Number, min: 0, required:[true, 'O valor precisa ser informado.']},
     status: { type:String, required: false, uppercase: true,
                 enum:['PAGO','PENDENTE','agendado'] }
 });
